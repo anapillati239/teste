@@ -1,0 +1,5 @@
+def adicionar_tarefa(tarefas, tarefa):
+    tarefas.append(tarefa)
+    with open("tarefas.txt", "a") as arquivo:
+        arquivo.write(tarefa + "\n")
+    print(f"Tarefa '{tarefa}' adicionada com sucesso!")
